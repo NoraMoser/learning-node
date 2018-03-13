@@ -1,0 +1,22 @@
+{
+  "name": "node-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoraMoser/learning-node.git"
+  },
+  "author": "Nora Moser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoraMoser/learning-node/issues"
+  },
+  "homepage": "https://github.com/NoraMoser/learning-node#readme",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
