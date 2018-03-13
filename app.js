@@ -3,6 +3,7 @@ console.log('starting app');
 const fs = require('fs');
 const os = require('os');
 const _ = require('lodash');
+
 const notes = require('./notes.js');
 
 // var user = os.userInfo();
@@ -20,5 +21,21 @@ const notes = require('./notes.js');
 // console.log(_.isString(true));
 // console.log(_.isString('Nora'));
 
-var filteredArray = _.uniq(['Mike', 'Nora', 3, 5, 'Nora', 5, 6, 7, 'Nora']);
-console.log(filteredArray);
+// var filteredArray = _.uniq(['Mike', 'Nora', 3, 5, 'Nora', 5, 6, 7, 'Nora']);
+// console.log(filteredArray);
+
+var command = process.argv[2];
+console.log('command: ', command);
+console.log(process.argv);
+
+if (command === 'add') {
+    console.log('Adding new note')
+} else if (command === 'list') {
+    console.log('Listing things')
+}  else if (command === 'read') {
+    console.log('read this')
+} else if (command === 'remove') {
+    console.log('remove me!')
+} else {
+    console.log('Command not recognized')
+}
