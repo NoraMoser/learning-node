@@ -1,4 +1,4 @@
-console.log('notes page');
+// console.log('notes page');
 // console.log(module);
 
 // module.exports.age = 32;
@@ -46,7 +46,7 @@ var addNote = (title, body) => {
 };
 
 var getAll = () => {
-    console.log('Getting all notes');
+    return fetchNotes();
 };
 
 var getNote = (title) => {
